@@ -1,0 +1,866 @@
+/* Общие классы */  
+
+.bold {
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 200% */
+}
+
+.regular {
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+}
+
+.texts { /* regular */    
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+}
+
+.h2-titles {
+    font-family: Montserrat-Regular;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h3-titles { /* bold  */
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-orange: #f90;
+    --color-grey: #cacaca;
+    --color-carrot: #E1670E;
+    --color-yellow: #FFB84D;
+    --color-iron: #666666;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Хидер */
+
+.container {
+    margin: 0 auto;
+    max-width: 1870px;
+    padding: 0 50px;
+}
+
+.header {
+    border-radius: 0px 0px 32px 32px;
+    background: var(--color-white);
+    box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
+    width: 100%;
+    padding: 14px 0;
+}
+
+.header__logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.header__logo-img {
+    width: 225px;
+    margin: 0 75px;
+    flex-shrink: 0;
+}
+
+.nav-cont {
+    align-items: center;
+    margin-right: 60px;
+    margin-left: auto;
+}
+
+.burger {
+    display: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    color: transparent;
+    cursor: pointer;
+}
+
+.header-list {
+    gap: 85px;
+    margin-right: 105px;
+}
+
+.header-list__item {
+    list-style-type: none;
+    flex-shrink: 0;
+}
+
+.header-list__a {
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.header-list__a:focus {
+    border: none;
+    outline: none;
+}
+
+.header-list__a:focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 5px;
+}
+
+.header-list__a:hover { 
+    border-bottom: 2px solid var(--color-orange);
+    padding-bottom: 7px;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.header-list__a:active {
+    border-bottom: 2px solid var(--color-carrot);
+    color: var(--color-carrot);
+    padding-bottom: 7px;
+    outline: none;
+    transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+}
+
+.header-button {
+    border: none;
+    background-color: transparent;
+}
+
+.header-svg {
+    fill: white;
+    stroke: black;
+}
+
+.header-button-min {
+    border: none;
+    background-color: transparent;
+}
+
+.header-svg-min {
+    fill: white;
+    stroke: black;
+}
+
+.header-svg:hover {
+    fill: white;
+    stroke: #FF9900;
+    transition: stroke 0.3s ease-in-out;
+}
+
+.header-svg:focus-visible {
+    fill: white;
+    stroke: black;
+    transition: stroke 0.3s ease-in-out;
+}
+
+.header-button:focus-visible {
+    outline: 2px solid #FF9900;
+    outline-offset: 2px;
+    transition: outline-color 0.3s ease-in-out;
+} 
+
+.header-button:checked {
+    outline:none;
+}
+
+.header-svg:active {
+    fill: white;
+    stroke: black;
+    transition: stroke 0.3s ease-in-out;
+    outline: 0;
+}
+
+/* Хиро */
+
+.hero {
+    padding-top: 50px;
+}
+
+.hero-container {
+    padding: 100px 80px;
+    max-width: 1770px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url(img/hero-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 830px; 
+}
+
+.hero__title {
+    margin-bottom: 24px;
+    color: var(--color-white);
+    font-family: Montserrat-ExtraBold;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.hero__text {
+    color: var(--color-white);
+    margin-bottom: 90px;
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__btn {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    border-color: transparent;
+    border-radius: 16px;
+    padding: 23px 38px;
+    text-align: center;
+    font-family: Montserrat-Bold;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__btn:hover, .hero__btn:focus-visible { 
+    border-color: transparent;
+    background-color: var(--color-yellow);
+}
+
+.hero__btn:active {
+    border-color: transparent;
+    background-color: var(--color-carrot);
+}
+
+/* О нас */
+
+.text {
+    margin-top: 0;
+}
+
+.text:not(:last-child) { 
+    margin-bottom: 50px;
+}
+
+.about-us__text {
+    margin-top: 21px; 
+    max-width: 1235px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.about-hidden {
+    display: none;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 622px;
+    background-image: url(img/about-img.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-detail__content {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 50px;
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-button-min {
+    display: none;
+}
+
+.card-detail-text {
+    max-width: 433px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.about-cards-wrap {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-column {
+    flex-direction: column;
+    width: calc(870 / 1770 * 100%);
+}
+
+.about-card {
+   flex-grow: 1;
+}
+
+.about-card:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    max-width: 870px;
+    padding: 65px 114px 58px 60px;
+    border: 1px solid #cacaca;
+    border-radius: 32px;
+    background-size: 0;
+}
+
+.card::before {
+    content: "";
+    flex-shrink: 0;
+    align-self: flex-start; /* делает элементы по верхнему краю  */
+    width: calc(190 / (870 - 60 - 114) * 100%);
+    margin-right: 50px;
+    padding-top: calc(165 / (870 - 60 - 114) * 100%);
+    background-image: inherit;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.about-us {
+    padding-top: 51px; 
+}
+
+.about-us__btn {
+    padding: 18px 35px;
+    border-radius: 16px;
+    border: 3px solid var(--color-orange);
+    background: transparent;
+    color: var(--color-white);
+    line-height: normal;
+    margin-left: auto;
+}
+
+.about-us__btn:hover, .about-us__btn:focus-visible  {
+    background-color: var(--color-orange);
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.about-us__btn:active {
+    background-color: var(--color-carrot);
+    border-color: var(--color-carrot);
+    transition: background-color, 0.3s ease-in-out, border-color, 0.3s ease-in-out;
+}
+
+/* Стадии */
+
+.stages {
+    padding-top: 99px;
+    max-width: 1772px;
+    
+}
+
+.stages-cont {
+    /* background-image: url(img/stages-img.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-origin: content-box; Фон позиционируется относительно содержимого элемента. */
+    margin-bottom:  32px;
+}
+
+.stages-img {
+    max-width: 870px;
+    
+}
+
+.stages-flex {
+    justify-content: space-between;
+}
+
+.stages__text {
+    max-width: 758px;
+    margin: 8px 0 18px 0;
+}
+
+.stages__btn {
+    display: flex;
+    gap: 32px;
+}
+
+.stages-btn-left {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    padding: 19px 38px;
+    border-radius: 16px;
+    border: 1px solid var(--color-orange);
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stages-btn-left:hover, .stages-btn-left:focus-visible {
+    background-color: var(--color-yellow);
+    border-color: var(--color-yellow);
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.stages-btn-left:active {
+    background-color: var(--color-carrot);
+    border-color: var(--color-carrot);
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.stages-btn-right {
+    padding: 19px 37px;
+    border-radius: 16px;
+    border: 1px solid var(--color-black);
+    background: transparent;
+    text-align: center;
+    color: var(--color-black);
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stages-btn-right:hover, .stages-btn-right:focus-visible {
+    color: var(--color-white);
+    background-color: var(--color-iron);
+    border-color: var(--color-iron);
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.stages-btn-right:active {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+    transition: background-color, 0.3s ease-in-out, border-color, 0.3s ease-in-out;
+}
+
+/* Вопросы */
+
+.questions {
+    max-width: 1770px;
+    padding-top: 100px;
+}
+
+.quest-cont {
+    /* gap: 23px;
+    margin-top: 36px; */
+    flex-wrap: wrap;
+    --cards-count: 3;
+    --gap: 23px;
+    gap: var(--gap);
+}
+
+.questions-container {
+    /* max-width: 568px; */
+    max-width: calc(100% / var(--cards-count) - var(--gap) * (var(--cards-count) - 1) / var(--cards-count));
+    padding:60px; 
+    border-radius: 32px;
+    border: 1px solid #CACACA;
+}
+
+.questions__h3 {
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 9px;
+}
+
+/* Футер */ 
+
+.footer {
+    padding-top: 105px;
+    width: 100%;
+}
+
+.footer-cont {
+    padding: 50px 75px;
+    justify-content: space-between;
+    background-color: var(--color-black);
+}
+
+.list-cont {
+    flex-direction: column;
+}
+
+.footer__logo {
+    box-sizing:border-box; 
+    margin-bottom: 14px;
+    /* max-width: 100%; 
+    height: auto; для имг */
+}
+
+.footer-list {
+    align-self: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.footer__item {
+    font-family: Montserrat-SemiBold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+/* футер ссылки */
+
+.footer__a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer__a:focus {
+    border: none;
+    outline: none;
+}
+
+.footer__a:focus-visible {
+    outline: 2px solid var(--color-orange);
+    outline-offset: 5px;
+} 
+
+.footer__a:hover {
+    color: var(--color-orange);
+    outline: none;
+} 
+
+.footer__a:active {
+    color: var(--color-carrot);
+} 
+
+/* футер свг */
+
+.footer__svg {
+   gap: 25px;
+   display: flex;
+}
+
+.fot-svg {
+    fill: var(--color-iron);
+}
+
+.fot-svg:hover {
+    fill: var(--color-orange);
+    transition: fill 0.3s ease-in-out;
+}
+
+.fot-svg:focus  {
+    fill: var(--color-iron);
+    border: 1px solid gray;
+    transition: fill 0.3s ease-in-out;
+}
+
+.fot-svg:active {
+    fill: var(--color-carrot);
+    transition: fill 0.3s ease-in-out;
+}
+
+.footer__h3 {
+    color: var(--color-grey);
+    font-family: Montserrat-Regular;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.svg-cont {
+    flex-direction: column;
+    gap: 90px;
+}
+
+.form-cont {
+    margin-left: 110px;
+}
+
+/* хидден */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;  
+    height: 1px;  
+    margin: -1px;  
+    border: 0;  
+    padding: 0;
+    clip: rect(0, 0, 0, 0);  
+    overflow: hidden;
+}
+
+.elements {
+    display: flex;
+    align-items: center;
+}
+
+.social-link-css {
+    display: inline-block;
+    fill: gray;
+    transition: fill .3s ease;
+    padding: 5px;
+}
+
+.social-link-css:focus {
+    outline: none;
+}
+
+.social-link-css:focus-visible {
+    outline: 2px solid var(--color-orange);
+    padding: 5px;
+}
+  
+.social-link-css:hover {
+    fill: var(--color-orange);
+    outline: none;
+}
+  
+.social-link-css:active {
+    fill: var(--color-carrot);
+}
+
+/* форма */
+
+.form-fot {
+    flex-direction: column;
+}
+
+.input-min {
+    background-color: #414141;
+    border-radius: 16px;
+    border: none;
+    max-width: 570px;
+    padding: 23px 24px;
+    box-sizing:border-box; 
+    margin-top: 25px;
+    color: var(--color-white);
+}
+
+.input-min:hover, .input-min:focus, .input-min:active  {
+    background-color: var(--color-iron);
+    outline-color: var(--color-iron);
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.message {
+    background-color: #414141;
+    color: var(--color-white);
+    border: none;
+    border-radius: 16px;    
+    min-height: 150px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    margin-top: 25px;
+    resize: none;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+}
+
+::-webkit-input-placeholder { /* меняет плейсхолдер */
+    color: var(--color-grey);
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* нижняя часть формы */
+
+.form-bottom {
+    margin-top: 32px;
+    gap: 22px;
+}
+
+.foot__p {
+    align-items: center;
+    gap: 4px;
+    color: var(--color-grey);
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+}
+
+.foot__img {
+    width: 4px;
+    height: 7px;    
+    display: block;
+    position: relative;
+}
+
+.double-svg {
+    width: 60px;
+    height: 60px;
+}
+
+label {
+    display: inline-block;
+}
+  
+label > input {display: none;}
+  
+label > div {
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+  
+label input:checked ~ div { /* вставляет картинку до имг */
+    background-image: url("img/Check.png");
+}
+
+.check-cont {
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.span-text {
+    color: #CACACA;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.send-btn {
+    display: flex;
+    padding: 19px 50px;
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    border-radius: 16px;
+    border-color: transparent;
+}
+
+.send-btn:hover, .send-btn:focus-visible {
+    background-color: var(--color-yellow);
+    border-color: transparent;
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.send-btn:active {
+    background-color: var(--color-carrot);
+    border-color: transparent;
+    transition: background-color, 0.3s ease-in-out;
+}
+
+.footer__text {
+    max-width: 363px;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    color: var(--color-grey);
+    padding-top: 87px;
+}
+
+/* Шрифты */
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: local('font/Montserrat-Bold'), local('Montserrat-Bold'),
+        url('font/Montserrat-Bold.woff2') format('woff2'),
+        url('font/Montserrat-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: local('font/Montserrat-Regular'), local('Montserrat-Regular'),
+        url('font/Montserrat-Regular.woff2') format('woff2'),
+        url('font/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: local('font/Montserrat-SemiBold'), local('Montserrat-SemiBold'),
+        url('font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('font/Montserrat-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Montserrat-ExtraBold';
+    src: local('font/Montserrat-ExtraBold'), local('Montserrat-ExtraBold'),
+        url('font/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('font/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: local('font/Montserrat-Medium'), local('Montserrat-Medium'),
+        url('font/Montserrat-Medium.woff2') format('woff2'),
+        url('font/Montserrat-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    

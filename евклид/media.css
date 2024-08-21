@@ -1,0 +1,640 @@
+@media (max-width: 1440px)  {
+
+    .header-list {
+        gap: 60px;
+    }
+
+    .stages-flex {
+        gap: 50px;
+    }
+
+    .stages-img {
+        max-width: 550px;
+    }
+
+    .stages__text {
+        max-width: 700px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .about-card:not(:last-child) {
+        margin-top: 32px;
+    }
+
+    .form-cont {
+        margin: 0;
+    }
+    
+    .about-column {
+        width: 100%;
+    } 
+
+    .footer__text {
+        display: none;
+    } 
+
+    .footer-cont {
+        gap: 50px;
+    }
+
+    .footer.container {
+        padding: 0;
+        padding-top: 100px;
+    }
+
+    .check-cont {
+        margin-left: 5px;
+    }
+} 
+
+@media (max-width: 1024px) {
+    
+    .header {
+        padding: 26px 0;
+    }
+
+    .header__logo-img {
+        width: 150px;
+    }
+
+    .header-list {
+        column-gap: 60px;
+        align-items: center;
+    }
+
+    .nav-cont {
+        margin: 0;
+    }
+    
+    .hero-container {
+        padding: 160px 77px;
+        max-width: 924px;
+        background-position: center;
+        background-size: 924px 668px;
+    }
+
+    .hero-text {
+        font-size: 20px;
+    }
+
+   .hero__title {
+        font-size: 60px;
+        margin-bottom: 16px;
+    }
+
+    .hero__text {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .about-us__text {
+        margin-bottom: 60px;
+    }
+
+    .card-detail {
+        max-width: 100%;
+    }
+
+    .about-card:not(:last-child) {
+       margin-top: 32px;
+    }
+
+    .card {
+        max-width: 924px;
+        padding-left: 77px;
+        padding-right: 154px;
+    }
+
+    .card::before {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .stages {
+        padding-top: 77px;
+        
+    }
+
+    .stages__text {
+        margin-bottom: 25px;
+        max-width: 437px;
+    }
+
+    .stages-img {
+        max-width: 437px;
+    }
+
+    .quest-cont {
+        margin-top: 32px;
+    }
+
+    .questions-container {
+        max-width: 100%;
+    }
+
+    .footer {
+        padding-top: 80px;
+    }
+
+    .footer-cont {
+        padding: 50px;
+    }
+
+    .form-cont {
+        margin-left: 0;
+    }
+
+    .input-min {
+        padding: 22px 24px;
+    }
+
+    .send-btn {
+        padding: 19px 36px;
+    }
+
+    .elements {
+        gap: 25px;
+    }
+
+    .footer__text {
+        display: none;
+    } 
+
+    .footer__h3 {
+        font-size: 46px;
+    }
+}
+
+@media (max-width: 962px) {
+    .header__logo-img {
+        width: 110px;
+        margin: 0 45px;
+    }
+
+    .header-button {
+        margin-right: 15px;
+    }
+
+    .header-list {
+        margin-right: 44px;
+    }
+
+    .card {
+        padding: 35px 45px;
+    }
+
+    .card-detail__content {
+        padding: 30px 40px;
+    }
+
+    .questions-container {
+        padding: 35px 40px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 18px 0 16px 0;
+    }
+    
+    .header__logo-img {
+        width: 110px;
+        margin: 0 44px;
+    }
+
+    .header-list__a {
+        font-size: 16px;
+        font-family: Montserrat-Bold;
+    }
+
+    .header-list {
+        gap: 40px; 
+        margin-right: 43px;
+    }
+
+    .hero__title {
+        font-size: 50px;
+    }
+    
+    .hero__text {
+        font-size: 18px;
+    }
+
+    .hero-container {
+        padding: 160px 40px;
+    }
+
+    .h3-titles {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .card-detail-text {
+        margin-right: 0;
+        max-width: 366px;
+    }
+
+    .card-detail__content {
+        gap: 20px;
+    }
+
+    .card {
+        padding: 35px 46px 35px 40px;
+    }
+
+    .card-title {
+        margin-bottom: 8px;
+    }
+
+    .card::before {
+        width: 114px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 16px;
+    }
+
+    .questions__h3 {
+        font-size: 23px;
+    }
+
+    /* футер */
+
+    .input-min {
+        max-width: 540px;
+    }
+
+    .message {
+        max-width: 540px;
+    }
+
+    .footer-list {
+        display: none;
+    }
+
+    .list-cont {
+        order: 2;
+    }
+
+    .footer-cont {
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        margin-top: 50px;
+        margin-bottom: 16px;
+    }
+
+    .stages-flex {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .stages-img  {
+        width: 100%;
+        max-width: 668px;
+    }
+
+    .stages-content {
+        order: 1;
+    }
+
+    .stages__text {
+        max-width: 668px;
+    }
+}
+
+@media (max-width: 684px) {
+    .header__logo-img {
+        margin: 0 15px;
+    }
+
+    .about-us__btn {
+        margin-left: 0;
+    }
+
+    .header-list {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .header-list {
+        gap: 24px;
+        margin: 0;
+    }
+
+    .header__logo-img {
+        width: 110px;
+        margin: 0 15px;
+    }
+
+    .nav-cont {
+        margin-left: auto;
+        overflow: auto;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-container {
+        padding: 60px 21px;
+    }
+
+    .hero__btn {
+        padding: 16px 25px;
+        font-size: 16px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card::before {
+        margin-right: 5px;
+    }
+
+    .card-detail__content {
+        flex-wrap: wrap;
+    }
+
+    .about-card {
+        flex-wrap: wrap;
+    }
+
+    .about-us__btn {
+        margin-left: 0;
+    }
+
+    .regular {
+        font-size: 14px;
+    }
+
+    .h3-titles {
+        font-size: 16px;
+    }
+
+    .stages-btn-left {
+        font-size: 12px;
+        padding: 8px 43px;
+        border-radius: 8px;
+    }
+
+    .stages-btn-right {
+        font-size: 12px;
+        padding: 12px 31px;
+        border-radius: 8px;
+    }
+
+    .stages__btn {
+        gap: 10px;
+    }
+
+    .questions__h3 {
+        font-size: 18px;
+    }
+
+    .questions-container {
+        padding: 25px;
+    }
+
+    .footer-cont {
+        padding: 30px 15px;
+    }
+
+    .form-bottom {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .list-cont {
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .header {
+        flex-wrap: wrap;
+        padding: 17px 15px 40px 15px;
+    }
+
+    .header-button-min {
+        display: block;
+        margin-left: auto;
+    }
+
+    .header__logo-img {
+        order: -1;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .header-list {
+        order: 2; 
+        margin-top: 20px;
+    }
+
+    .nav-cont {
+     
+    }
+
+    .header__logo-img {
+        width: 110px;
+        margin: 0 15px;
+    }
+
+    .hero-container {
+        padding: 60px 21px;
+    }
+
+    .hero__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero__text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .hero__btn {
+        padding: 11px 28px;
+        font-size: 12px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text {
+        line-height: 28px;
+        margin-bottom: 14px;
+    }
+
+    .text:last-child {
+        margin: 0;
+    }
+
+    .card::before {
+        display: block;
+    }
+
+    .about-card {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .h2-titles {
+        font-size: 24px;
+    }
+
+    .h3-titles {
+        font-size: 18px;
+        font-family: Montserrat-Medium;
+        font-weight: normal;
+    }
+
+    .card-title {
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .stages {
+        padding-top: 60px;
+    }
+
+    .stages-cont {
+        margin-bottom: 20px;
+    }
+
+    .stages-content .h3-titles {
+        margin-top: 16px;
+    }
+
+    .quest-cont {
+        margin-top: 20px;
+    }
+
+    .questions-container {
+        padding: 0;
+        border: none;
+    }
+
+    .questions__h3 {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .regular {
+        font-size: 14px;
+    }
+
+    .footer__h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .input-min {
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 22px 20px;
+    }
+
+    .message {
+        margin: 0;
+        padding: 14px 20px;
+    }
+
+    .form-bottom {
+        flex-direction: column;
+    }
+
+    .send-btn {
+        font-size: 12px;
+        margin: 0 62px;
+        padding: 10px 17px;
+        border-radius: 8px;
+    }
+
+    .list-cont {
+        align-items: center;
+        border-top: 2px solid #414141;
+        margin-top: 25px;  
+    }
+
+    .footer__logo {
+        margin-top: 16px;
+        max-width: 131px;
+    }
+
+    .footer .container {
+        padding-top: 100px;
+    }
+
+    .double-svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .elements {
+        gap: 16px;
+    }
+    
+    .social-link-css {
+        padding: 0;
+    }
+
+    .card-detail {
+        background-image: none;
+        min-height: 0;
+    }
+
+    .card-detail-text {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .card-detail__content {
+        color: var(--color-black);
+        background-color: var(--color-white);
+        padding: 0;
+    }
+
+    .about-us__text {
+        margin-bottom: 14px;
+    }
+
+    .about-us__btn {
+        color: var(--color-orange);
+        font-size: 12px;
+        padding: 10px 41px;
+    }
+
+    .about-hidden {
+        display: block;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+} 
